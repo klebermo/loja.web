@@ -1,23 +1,25 @@
 package org.kleber.loja.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import java.util.List;
 
-public abstract class Dao {
+public abstract class Dao<E> {
   protected Class clazz;
 
   public Dao(Class clazz) {
     this.clazz = clazz;
   }
 
-  public void insert() {
+  public void insert(E object) {
     //
   }
 
-  public void update() {
+  public void update(E object) {
     //
   }
 
-  public void delete() {
+  public void delete(E object) {
     //
   }
 
