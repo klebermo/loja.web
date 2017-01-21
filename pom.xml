@@ -38,6 +38,21 @@
             <artifactId>thymeleaf-extras-springsecurity4</artifactId>
             <version>LATEST</version>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.validation</groupId>
+            <artifactId>validation-api</artifactId>
+            <version>LATEST</version>
+        </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>persistence-api</artifactId>
+            <version>LATEST</version>
+        </dependency>
   </dependencies>
 
   <build>
