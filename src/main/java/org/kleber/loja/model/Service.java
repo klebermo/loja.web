@@ -8,9 +8,9 @@ public abstract class Service<E> {
   @Autowired
   protected Dao<E> dao;
 
-  protected Class clazz;
+  protected Class <?>clazz;
 
-  public Service(Class clazz) {
+  public Service(Class<?> clazz) {
     this.clazz = clazz;
   }
 
@@ -26,7 +26,7 @@ public abstract class Service<E> {
     dao.delete(object);
   }
 
-  public List select(String orderby, String groupby) {
+  public List<?> select(String orderby, String groupby) {
     return dao.select(orderby, groupby);
   }
 }

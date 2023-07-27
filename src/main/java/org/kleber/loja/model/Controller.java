@@ -15,9 +15,9 @@ public abstract class Controller<E> {
   @Autowired
   protected Service<E> serv;
 
-  protected Class clazz;
+  protected Class<?> clazz;
 
-  public Controller(Class clazz) {
+  public Controller(Class<?> clazz) {
     this.clazz = clazz;
   }
 

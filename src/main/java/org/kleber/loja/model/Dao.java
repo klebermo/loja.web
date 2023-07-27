@@ -1,13 +1,11 @@
 package org.kleber.loja.model;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 import java.util.List;
 
 public abstract class Dao<E> {
-  protected Class clazz;
+  protected Class<?> clazz;
 
-  public Dao(Class clazz) {
+  public Dao(Class<?> clazz) {
     this.clazz = clazz;
   }
 
@@ -23,7 +21,7 @@ public abstract class Dao<E> {
     //
   }
 
-  public List select(String orderby, String groupby) {
+  public List<?> select(String orderby, String groupby) {
     return null;
   }
 }
